@@ -17,18 +17,21 @@ const Quote = (props) => {
 
   return (
     <div className="main-container">
-      <div className="imgcontainer">
-        <img src={Kanye} alt="" />
-      </div>
+      <img src={Kanye} alt="" />
+
       <div className="textcontainer">
-        <div className="text">{props.kanye}</div>
-        <button
-          onClick={(e) => {
-            handleClick();
-          }}
-        >
-          Get new quote
-        </button>
+        <div className="box sb1">"{props.kanye}"</div>
+
+        <div>
+          <button
+            className="small blue button"
+            onClick={(e) => {
+              handleClick();
+            }}
+          >
+            Talk to the Yeezy
+          </button>
+        </div>
       </div>
     </div>
   );
